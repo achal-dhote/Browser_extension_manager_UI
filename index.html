@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extensions Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="top-bar">
+            <div class="left">
+                <span class="icon">🧩</span>
+                <h1>Extensions</h1>
+            </div>
+            <button id="themeToggle" title="Toggle Theme">🌙</button>
+        </header>
+
+        <!-- Search and Filters -->
+        <div class="search-wrapper">
+            <h1 id="search">Extensions List</h1>
+            <div class="filters" style="margin-top: 1rem;">
+                <button data-filter="all" class="active">All</button>
+                <button data-filter="active">Active</button>
+                <button data-filter="inactive">Inactive</button>
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <main id="extensionList"></main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
